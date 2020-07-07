@@ -1,24 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function App(props) {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="header">
+        <h1 className="header__title">{props.name}</h1>
       </header>
+      <main className="content">
+       
+      </main>
+      <footer className="footer">
+        <p className="footer__text">Все права защищены, сделано в {props.company}. 2020.</p>
+      </footer>
     </div>
   );
 }
